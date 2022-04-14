@@ -1,12 +1,16 @@
 //Elements from the DOM
 const modalWindow = document.getElementById("modal-window"),
-  body = document.querySelector("body");
+  body = document.querySelector("body"),
+  playBtn = document.getElementById("playBtn"),
+  closeBtn = document.getElementById("closeBtn");
 
 const openModal = () => {
   modalWindow.className = "modal-window-open";
   //Se establece esta propiedad al body para que el usuario no pueda scrollear  mientras esta en la ventana modal.
   body.style.overflowY = "hidden";
 };
+
+playBtn.addEventListener("click", openModal);
 
 const closeModal = () => {
   modalWindow.className = "modal-window-closed";
@@ -17,3 +21,5 @@ const closeModal = () => {
   video.currentTime = 0;
   video.pause();
 };
+
+closeBtn.addEventListener("click", closeModal);
