@@ -9,8 +9,8 @@
     <meta name="keywords" content="Example page, code challenge, code practice, jr developer, modal window, landascape">
     <title>Beautiful Landascapes</title>
     <!-- Icono de la web -->
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
@@ -24,7 +24,7 @@
             <i title="play button" class="fas fa-play-circle"></i>
         </button>
         <!-- Imagen con atributo lazy, que hace que solo se cargue si el usuario la visualiza, ahorrando recursos. Atributos alt y title para mayor accesibilidad -->
-        <img title="landscape image" loading="lazy" src="/images/mountain.jpg" alt="A mountain landascape">
+        <img title="landscape image" loading="lazy" src="./images/mountain.jpg" alt="A mountain landascape">
     </section>
     <!-- Section contenedor de caja de cotenido-->
     <section class="text-container">
@@ -41,11 +41,11 @@
     <!-- Section Contenedor de la ventana modal. Tiene la clase cerrada que luego será cambiada para que esta sea mostrada -->
     <section id="modal-window" class="modal-window-closed">
         <!-- Atributo muted para que el video no arranque con sonido. Controls para que se muestren los controles de repoduccion -->
-        <video muted loading="lazy" controls title="Video of New Zeland's landscapes" src="/images/video.mp4"></video>
+        <video muted loading="lazy" controls title="Video of New Zeland's landscapes" src="./images/video.mp4"></video>
         <!-- Boton close que cambia la clase del section contenedor para que esta se oculte nuevamente. Lo realiza mediante el evento onclick, el cual llama a la funcion closeModal() -->
         <button id="closeBtn" title="close button" class="modalButton">Close</button>
     </section>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
